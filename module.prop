@@ -1,0 +1,10 @@
+id=su_xbin_bind
+name=Su xbin_bind
+version=v1.2
+versionCode=12
+author=laggardkernel
+description=Create a soft link as /system/xbin/su, which points to an existing su binary from MagiskSU, phh's superuser, SuperSU or the kernel. Su binary will NOT be added by the module itself. Root your devices beforehand.
+support=https://github.com/laggardkernel/su-xbin-bind
+donate=https://github.com/laggardkernel
+cacheModule=false
+template=3
