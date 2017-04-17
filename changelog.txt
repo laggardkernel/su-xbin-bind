@@ -1,0 +1,6 @@
+v1.2
+    - Add Magisk v12 support, /magisk/.core/bin/su
+    - template update to v3
+
+v1.0
+    - First release
