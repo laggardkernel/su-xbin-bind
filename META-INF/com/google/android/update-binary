@@ -451,7 +451,8 @@ if [ ! -z "$LINKTARGET" ]; then
     ui_print "- Linking $LINKTARGET as $MODPATH$SYS/xbin/su"
     rm -rf $MODPATH 2>/dev/null
     mkdir -p $MODPATH$SYS/xbin
-    ln -s "$LINKTARGET" "$MODPATH$SYS/xbin/su"
+    # ln -s "$LINKTARGET" "$MODPATH$SYS/xbin/su"
+    cp -af "$LINKTARGET" "$MODPATH$SYS/xbin/su"
   fi
 else
   ui_print "! No su is found. Root your device beforehand."
@@ -518,7 +519,7 @@ set_permissions
 ui_print "- Unmounting partitions"
 
 umount $MOUNTPATH
-losetup -d $LOOPDEVICE
+losetup -d $LOOPDEVICE1
 rm -rf $MOUNTPATH
 
 # Shrink the image if possible
